@@ -47,9 +47,9 @@ echo "Tiempo promedio entre eventos (s): $avg_time" > ../performance.txt
 
 cd ..
 
-# Mensajes para Git (supuesto que el repo ya fue inicializado)
-git add events/*.txt
-git commit -m "Agregar archivos individuales de eventos de neutrinos"
+
+git add eventos/*.txt
+git commit -m "Eventos de neutrinos detectados"
 git add simulate.sh results.txt performance.txt
-git commit -m "Agregar script, resultados consolidados y rendimiento"
+git commit -m "Script funcional y resultados comprobados"
 git push
