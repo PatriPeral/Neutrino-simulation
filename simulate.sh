@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Este codigo en su completitud, esta detallado paso a paso, pero es importante poner esta nota inicial donde aclare el porque de algunas cosas:
+#Una de las cosas que hace mi codigo, es que despues de ejecutar el script, al cerrarlo borra los datos, para que cada vez que se ejecute me de los numeros del 0001 al 1000 como solicita la tarea, y no tenga problemas con 
+#los nombres de cada archivo cada vez que ejecfute el script (ya que si no, al tener los datos previos, el script intentaria creas nuevamente los 1000 archivos y tendria problemas con los nombres de los ya existentes)
+
 mkdir -p eventos #veo si existe una carpeta llamada eventos si no existe se crea
 cd eventos || exit
 
@@ -53,3 +57,4 @@ git commit -m "Eventos de neutrinos detectados"
 git add simulate.sh results.txt performance.txt
 git commit -m "Script funcional y resultados comprobados"
 git push
+
